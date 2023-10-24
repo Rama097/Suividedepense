@@ -33,11 +33,11 @@ class _AjoutDepenseFormState extends State<AjoutDepenseForm> {
       children: <Widget>[
         TextFormField(
           controller: depenseEffectueeController,
-          decoration: InputDecoration(labelText: 'Dépense effectuée'),
+          decoration: InputDecoration(labelText: 'Produit'),
         ),
         TextFormField(
           controller: budgetController,
-          decoration: InputDecoration(labelText: 'Budget'),
+          decoration: InputDecoration(labelText: 'Montant'),
           keyboardType: TextInputType.number, // Pour le champ de budget
         ),
         TextFormField(
@@ -58,8 +58,6 @@ class _AjoutDepenseFormState extends State<AjoutDepenseForm> {
             final budget = int.tryParse(budgetController.text) ?? 0;
             final date = dateController.text;
             final heure = heureController.text;
-
-            
 
             
             final depenseData = {

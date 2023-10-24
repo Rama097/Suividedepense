@@ -5,6 +5,7 @@ import 'list_depense.dart';
 
 void main() {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     home: FirstPage(),
   ));
 }
@@ -22,7 +23,7 @@ class FirstPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             // Logo 
-            Image.asset('assets/logo.png'), 
+            Image.asset('assets/monlogo.png'), 
 
             // Espacement
             SizedBox(height: 20),
